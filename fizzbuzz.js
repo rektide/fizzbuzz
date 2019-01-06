@@ -10,5 +10,5 @@ const pop= {
 
 module.exports= Array.from(pop)
 if( typeof require!== "undefined"&& require.main=== module){
-	console.log( module.exports.join( " "))
+	console.log( module.exports.join( process.env.IFS|| " "))
 }
