@@ -7,8 +7,8 @@ const pop= {
 		return { value: is5, done: val> 100}
 	}
 }
+
+module.exports= Array.from(pop)
 if( typeof require!== "undefined"&& require.main=== module){
-	console.log( Array.from( pop).join( " "))
-}else{
-	module.exports= Array.from(pop)
+	console.log( module.exports.join( " "))
 }
